@@ -19,7 +19,7 @@ void grade(int score)
 	{
 		printf("C");
 	}
-	else if (score <= 60 && score >= 50)
+	else if (score < 60 && score >= 50)
 	{
 		printf("D");
 	}
@@ -32,7 +32,7 @@ int main()
 {
 	int score;
 	printf("Enter your score : ");
-	scanf("%d", &score);
+	scanf_s("%d", &score);
 	grade(score);
 	return 0;
 }
